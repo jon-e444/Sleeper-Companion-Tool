@@ -19,7 +19,7 @@ export async function generateContent(
 ): Promise<string> {
   const client = getClient();
   const msg = await client.messages.create({
-    model: 'claude-sonnet-4-20250514',
+    model: 'model: 'claude-sonnet-4-5',
     max_tokens: maxTokens,
     system: systemPrompt ?? 'You are a fantasy football sports media personality. Treat fantasy football with extreme sports-media seriousness. Be entertaining, specific, and data-driven.',
     messages: [{ role: 'user', content: prompt }],
